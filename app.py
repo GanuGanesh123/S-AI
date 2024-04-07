@@ -27,4 +27,4 @@ if prompt:
     #message = requests.post(target_url, json={'message': prompt})
     #response: str = f"{message.text.split('<|assistant|>')[-1]}"
     st.session_state[MESSAGES].append(Message(actor=ASSISTANT, payload=prompt))
-    st.chat_message(ASSISTANT).write(prompt)
+    st.chat_message(ASSISTANT).write('putsala')
